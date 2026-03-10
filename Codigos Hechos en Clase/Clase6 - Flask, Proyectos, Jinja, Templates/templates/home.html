@@ -1,0 +1,35 @@
+<h1>Hello every-nyan!</h1>
+
+
+<p>Mi variable valor: {{ nombre }}</p>
+
+<p>
+    {% if nombre == "Juan" %}
+        Hola Juancho
+    {% else %}
+        Hola! {{ nombre }}
+    {% endif %}
+</p>
+
+<ul>
+    {% for i in numeros %}
+        <li> {{ i }} </li>
+    {% endfor %}
+</ul>
+
+<ul>
+    {% for key in diccionario %}
+    <li>Clave: {{ key }}
+        Valor: {{diccionario[key]}}</li>
+    {% endfor %}
+
+</ul>
+
+
+<p>url: {{ url_for('static', filename="templates/home.html")}}</p>
+
+<p>url external true: {{ url_for('static', filename="templates/home.html",external=True)}}</p>  
+
+<a href="{{ url_for('pepe') }}">Hello dinámico</a>
+
+<a href="http://localhost:8081/hello">Hello hardocdeado</a>

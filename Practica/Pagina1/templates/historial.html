@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Historial
+{% endblock %}
+
+{% block content %}
+<h1>Historial~</h1>
+
+<ul>
+    {% for mensaje in mensajes %}
+    <li>
+        {{ mensaje }}
+    </li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

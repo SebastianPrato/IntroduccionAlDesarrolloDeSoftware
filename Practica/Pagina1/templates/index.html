@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Message Registrator!!
+{% endblock %}
+
+{% block content %}
+
+<h1>Registrador de mensajes :D</h1>
+<br>
+<h2>("registrador" es una palabra?) </h2>
+<p>(Sí, es una palabra)</p>
+<br>
+<p>A continuación, un campo donde podrá ingresar mensajes para guardarlos (máximo 300 caracteres)</p>
+<br>
+<form method="POST" action="/">
+    <label for="mensaje">Mensaje:</label>
+    <textarea name="mensaje" id="mensaje" maxlength="300"></textarea>
+    <button id="guardar" type="submit">
+        guardar
+    </button>
+</form>
+
+{% endblock %}

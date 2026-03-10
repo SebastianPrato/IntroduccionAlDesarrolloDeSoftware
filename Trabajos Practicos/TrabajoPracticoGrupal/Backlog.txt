@@ -1,0 +1,16 @@
+Crear el proyecto en Git-hub
+Crear el back-log en Trello o en GitHub
+Figma 
+
+Front-end:
+Definir vistas (templates)
+Crear interfaz  UX-UI 
+Crear end-points
+
+
+Back-end
+Crear los end-points
+Diagramar las bases de datos.
+Realizar los scripts para crear las bases de datos.
+MVC
+

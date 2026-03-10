@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 9~</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='/css/style.css', external=True)}}">
+</head>
+<body>
+
+    <h1 id="tituloh1">HOLAAA</h1>
+    <p>tengo hambre:(</p>
+    <p>no puedo comer todavia, tengo que estudiar u.u</p>
+
+    <button id="alerta">Pulse aquí!!</button>
+
+    <button id="change-color">Cambiar color!</button>
+    <br>
+    <div>
+        <h3>Ejercitación!</h3>
+        <br>
+        <label for="primer_texto">Primer texto</label>
+        <input type="text" id="primer_texto" name="primer_texto">
+
+        <label for="segundo_texto">Segundo texto</label>
+        <input type="text" id="segundo_texto" name="segundo_texto">
+
+        <button id="concatenar">Concatenar textos!</button>
+    </div>
+    <script src="{{url_for('static', filename='/js/script.js', external=True)}}"></script>
+</body>
+</html>

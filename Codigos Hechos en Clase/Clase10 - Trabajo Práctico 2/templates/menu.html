@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block list %}
+<li><a href=" {{ url_for('index') }}">Home</a></li>
+<li class="active"><a href="#">Menu</a></li>
+<li><a href="{{url_for('contact')}}">Contact</a></li>
+{% endblock %}
+
+{% block title %}
+<h1>Miren el menú ñami uwu</h1>
+{% endblock %}
+
+{% block content %}
+<div id="fh5co-featured-menu" class="fh5co-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 fh5co-heading animate-box">
+				<h2>Our Delicous Menu</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<p>Estamos seguros que nuestras espectaculares comidas los dejaran más que felices
+							Acá en {{nombre_cafeteria}} Nuestro sabor destaca por su cálidad de primera y es la insignia
+							de Nuestro
+							Restaurant.</p>
+					</div>
+				</div>
+			</div>
+
+			{% for plato in menu.values() %}
+
+			<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
+				<div class="fh5co-item animate-box">
+					<img src="{{ url_for('static', filename='images/' + plato.imagen) }}" class="img-responsive">
+					<h3>{{ plato.nombre }}</h3>
+					<span class="fh5co-price">{{plato.precio}}</span>
+					<p>{{plato.descripcion}}.</p>
+				</div>
+			</div>
+
+			{% if loop.index % 2 == 0 %}
+			<div class="clearfix visible-sm-block visible-xs-block"></div>
+			{% endif %}
+			{% if loop.index % 4 == 0 %}
+			<div class="clearfix visible-md-block visible-lg-block"></div>
+			{% endif %}
+
+			{% endfor %}
+		</div>
+	</div>
+
+	{% endblock %}

@@ -1,0 +1,28 @@
+*{
+    background-color: #FFE4C9;
+}
+
+#h1_container{
+    display: flex;
+    width: auto;
+    height: 15vh;
+    border: 0.3em solid black;
+    background-color: #f0ffff;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/static/images/5f34d78334f783d00d1e2b16ce3b32c9.jpg) ;
+    background-size: contain;
+}
+
+
+h1{
+    border: 0.1em solid black;
+    padding: 0.2em;
+    border-radius: 0.2em;
+    width: fit-content;
+    background-color: aliceblue;
+}
+
+h1:hover{
+    background-color: #E78895;
+}

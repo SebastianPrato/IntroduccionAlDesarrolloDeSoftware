@@ -1,0 +1,6 @@
+
+88888, Diego Perez, diegoperez@mail.com, 9.5
+99999, Isabel Castro, isabelcastro@mail.com, 8.9
+12121, Francisco Ramos, franciscoramos@mail.com, 6.0
+13131, Teresa Ruiz, teresaruiz@mail.com, 7.5
+14141, Hector Alvarez, hectoralvarez@mail.com, 9.2

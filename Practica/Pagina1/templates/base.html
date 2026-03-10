@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="hamburguesa__container">
+            <img src="{{url_for('static', filename='icons/menu-wide.png')}}" alt="menuicon" class="hamburguesa">
+        </div>
+        <ul class="list">
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="{{url_for('static', filename='icons/dashboard.png')}}" class="list__img">
+                    <a href="#" class="nav__link">Inicio</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="{{url_for('static', filename='icons/docs.png')}}" alt="docs" class="list__img">
+                    <a href="#" class="nav__link">Servicios</a>
+                    <img src="{{url_for('static', filename='icons/arrow.png')}}" alt="flechita" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="{{url_for('static', filename='icons/stats.png')}}" class="list__img">
+                    <a href="#" class="nav__link">Estadisticas</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="{{url_for('static', filename='icons/bell.png')}}" alt="docs" class="list__img">
+                    <a href="#" class="nav__link">Notificaciones</a>
+                    <img src="{{url_for('static', filename='icons/arrow.png')}}" alt="flechita" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="{{url_for('static', filename='icons/contacto.png')}}" class="list__img">
+                    <a href="#" class="nav__link">Contacto</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div id="content">
+        {% block content %} {% endblock %}
+    </div>
+
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Teto Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div id="h1_container">
+        <h1 class="titulo">Teto Store: Utahime Teto-sama!</h1>
+    </div>
+    <div id="productos">
+        <h2 class="titulo">Nuestros productos</h2>
+        <ul id="lista_productos">
+            <li>
+                Teto Cos <br>
+                <img src={{ url_for('static', filename='images/tetocos.png') }}  alt="Teto Plush!" height="150px"
+                width="150px">
+            </li>
+            <li>
+                Teto Plush<br>
+                <img src={{ url_for('static', filename='images/tetoplush.jpg') }} alt="Teto Plush!" height="150px"
+                width="150px">
+            </li>
+            <li>Teto Pear<br>
+                <img src={{ url_for('static', filename='images/Kasane_Pearto_Original.webp') }} alt="Teto Plush!" height="150px"
+                width="150px">
+            </li>
+        </ul>
+        <button id="boton_ver_mas">Ver más</button>
+    </div>
+    <footer>
+        <p>Mail de contacto: Tetonesstoregmail.com</p>
+        <p>Teto Store 2025</p>
+    </footer>
+</body>
+
+</html>

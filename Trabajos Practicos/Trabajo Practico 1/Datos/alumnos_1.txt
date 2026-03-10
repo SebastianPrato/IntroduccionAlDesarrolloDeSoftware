@@ -1,0 +1,6 @@
+
+12345, Juan Perez, juanperez@mail.com, 8.5
+67890, Maria Lopez, marialopez@mail.com, 7.2
+54321, Pedro Garcia, pedrogarcia@mail.com, 9.0
+11111, Ana Martinez, anamartinez@mail.com, 6.8
+22222, Luis Fernandez, luisfernandez@mail.com, 7.8
